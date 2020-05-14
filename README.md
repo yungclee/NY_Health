@@ -2,7 +2,6 @@
 
 ## Data Source
 ![enter image description here](https://phaboard.org/wp-content/uploads/New-York-State.png)
-
 **Hospital Inpatient Discharges** data sets is one go the open data sets for general public provided by the state of New York (data.ny.gov). 
 
 > "The Statewide Planning and Research Cooperative System (SPARCS)
@@ -49,13 +48,18 @@ The code utilize EDA module in python to generate fast Eda result to get some in
 After exploratory data analysis is done on small sample, we found some challenges/ known issues with modeling this data. 
 
 - **Data Size**: The annual data contain around 2 million entries per file, which is around 900 MB per year. Normal computer hardware setup will be not enough to load data set in-memory. Possible solution will be batch processing or distributed computing. 
+-  **Missing Values**: Across 2009-2017 the data format has slightly change, some information might be added or deleted for general public, potential solution includes using severe missing columns or imputation. ![Missing data from 2000 samples of each year](https://raw.githubusercontent.com/yungclee/NY_Health/master/Images/eda_missingdata.png)
 -  **Imbalanced Data**:  There are multiple imbalanced categories in this data set, not only but including:	
 	- **Gender-specific procedure**: some categories do not exist. Such as males are physiologically not capable of giving birth.  
-	- **Emergency/underrepresented cases**: Some rare hospitalization including heart attack, gunshot wound.  
+	- **Emergency/underrepresented cases**: Some rare hospitalization including heart attack, gunshot wound.  Such incidents may have impact on the admission type 
+	![enter image description here](https://raw.githubusercontent.com/yungclee/NY_Health/master/Images/eda_admission.png)
 	- **Demographic**: We can notice that the combinations of *[Race], [Ethinticity], and [Gender]*  is highly imbalanced in the dataset.
 Possible solutions: include interaction term of gender and procedure, hierarchical modeling, or separate model for gender-sensitive procedure and conditions. 
+![enter image description here](https://raw.githubusercontent.com/yungclee/NY_Health/master/Images/eda_ethinticity.png)
+![enter image description here](https://raw.githubusercontent.com/yungclee/NY_Health/master/Images/eda_race.png)
+
 -  **Ambiguity in Payments**: from Eda, most patients' payment methods are medicare or medicaid, but the details from the medicare/medicaid is not listed from the data. 
 -  **Procedure price/ Insurance coverage**: the data is time-sensitive, policies and insurance might have changed over the spam of the data. The charges from the hospital and the coverage form the insurance the inpatient use may act differently over time.  
 
 ## Questions?
-Email yungclee@umich.edu
+Email Yung-Chun (Ray) Lee - yungclee@umich.edu .
