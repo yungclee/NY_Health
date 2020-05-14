@@ -58,8 +58,8 @@ After exploratory data analysis is done on small sample, we found some challenge
 - **Demographic**: We can notice that the combinations of *[Race], [Ethinticity], and [Gender]*  is highly imbalanced in the dataset.
 Possible solutions: include interaction term of gender and procedure, hierarchical modeling, or separate model for gender-sensitive procedure and conditions. 
 
-![enter image description here](https://raw.githubusercontent.com/yungclee/NY_Health/master/Images/eda_ethinticity.png)
-![enter image description here](https://raw.githubusercontent.com/yungclee/NY_Health/master/Images/eda_race.png)
+![Ethinticity imbalance](https://raw.githubusercontent.com/yungclee/NY_Health/master/Images/eda_ethinticity.png)
+![Race imbalance](https://raw.githubusercontent.com/yungclee/NY_Health/master/Images/eda_race.png)
 
 -  **Ambiguity in Payments**: from Eda, most patients' payment methods are medicare or medicaid, but the details from the medicare/medicaid is not listed from the data. 
 -  **Procedure price/ Insurance coverage**: the data is time-sensitive, policies and insurance might have changed over the spam of the data. The charges from the hospital and the coverage form the insurance the inpatient use may act differently over time.  
