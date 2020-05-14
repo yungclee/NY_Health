@@ -51,10 +51,13 @@ After exploratory data analysis is done on small sample, we found some challenge
 -  **Missing Values**: Across 2009-2017 the data format has slightly change, some information might be added or deleted for general public, potential solution includes using severe missing columns or imputation. ![Missing data from 2000 samples of each year](https://raw.githubusercontent.com/yungclee/NY_Health/master/Images/eda_missingdata.png)
 -  **Imbalanced Data**:  There are multiple imbalanced categories in this data set, not only but including:	
 	- **Gender-specific procedure**: some categories do not exist. Such as males are physiologically not capable of giving birth.  
-	- **Emergency/underrepresented cases**: Some rare hospitalization including heart attack, gunshot wound.  Such incidents may have impact on the admission type 
-	![enter image description here](https://raw.githubusercontent.com/yungclee/NY_Health/master/Images/eda_admission.png)
-	- **Demographic**: We can notice that the combinations of *[Race], [Ethinticity], and [Gender]*  is highly imbalanced in the dataset.
+	- **Emergency/underrepresented cases**: Some rare hospitalization including heart attack, gunshot wound. Such incidents may have impact on the admission type 
+
+![enter image description here](https://raw.githubusercontent.com/yungclee/NY_Health/master/Images/eda_admission.png)
+
+- **Demographic**: We can notice that the combinations of *[Race], [Ethinticity], and [Gender]*  is highly imbalanced in the dataset.
 Possible solutions: include interaction term of gender and procedure, hierarchical modeling, or separate model for gender-sensitive procedure and conditions. 
+
 ![enter image description here](https://raw.githubusercontent.com/yungclee/NY_Health/master/Images/eda_ethinticity.png)
 ![enter image description here](https://raw.githubusercontent.com/yungclee/NY_Health/master/Images/eda_race.png)
 
