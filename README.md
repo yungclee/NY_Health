@@ -41,7 +41,7 @@ Our goal is to build a **predictive model aim to estimate the final cost range f
 The process is certainly not difficult but knowing what exact procedure or the precise treatment might not be for everyone, especially ICD-10 is a sophisticated and complex system for medical professionals knowing the exact code will certainly help getting a more accuracy and precise estimate but for general public use might not be the case.
 
 ## Current Progress
-Simple exploratory data analysis is available (does not need to download the data, might need to install some module such as `sodapy` to query the data and `EDA` package for the code).
+Simple exploratory data analysis is available (does not need to download the data, might need to install some module such as `sodapy` to query the data and `EDA` package for the code). We used systematic sampling to get the first 2000 entries across 2009-2017 as our EDA sample. 
 The code utilize EDA module in python to generate fast Eda result to get some insight. 
 
 ## Challenges
