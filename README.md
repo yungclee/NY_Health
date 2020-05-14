@@ -2,6 +2,7 @@
 
 ## Data Source
 ![enter image description here](https://phaboard.org/wp-content/uploads/New-York-State.png)
+
 **Hospital Inpatient Discharges** data sets is one go the open data sets for general public provided by the state of New York (data.ny.gov). 
 
 > "The Statewide Planning and Research Cooperative System (SPARCS)
