@@ -55,3 +55,6 @@ After exploratory data analysis is done on small sample, we found some challenge
 Possible solutions: include interaction term of gender and procedure, hierarchical modeling, or separate model for gender-sensitive procedure and conditions. 
 -  **Ambiguity in Payments**: from Eda, most patients' payment methods are medicare or medicaid, but the details from the medicare/medicaid is not listed from the data. 
 -  **Procedure price/ Insurance coverage**: the data is time-sensitive, policies and insurance might have changed over the spam of the data. The charges from the hospital and the coverage form the insurance the inpatient use may act differently over time.  
+
+## Questions?
+Email yungclee@umich.edu
